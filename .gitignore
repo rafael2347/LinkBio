@@ -1,0 +1,11 @@
+# Excluir archivos grandes
+Fotos/fotoPrincipal_backup.png
+*_backup.png
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos temporales
+*.tmp
+*.log
