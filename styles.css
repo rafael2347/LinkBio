@@ -426,10 +426,11 @@ ul.social li:hover {
 .logo-footer {
     opacity: 0.5;
     color: #fff;
-    text-align: center;
+    text-align: center; /* Esto ya está presente */
     bottom: 32px;
-    left: calc(43% - 15px);
-    position: absolute
+    left: 50%; /* Cambiar a 50% para centrar horizontalmente */
+    transform: translateX(-50%); /* Ajusta el elemento para que esté centrado */
+    position: absolute;
 }
 
 a:link,
