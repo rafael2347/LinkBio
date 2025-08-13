@@ -447,7 +447,8 @@ a:visited,
 }
 
 .widget_bottom {
-    width: 640px;
+    width: 100%;
+    max-width: 640px;
 }
 
 
@@ -529,7 +530,8 @@ a:visited,
 /* Tablets y pantallas medianas */
 @media (min-width: 481px) and (max-width: 1024px) {
     .widget_bottom {
-        width: 80%;
+        width: 95% !important;
+        max-width: 640px;
     }
 
     .widget_bottom h1 {
