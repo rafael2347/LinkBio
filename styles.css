@@ -6,6 +6,8 @@ body {
     margin: 0
 }
 
+
+
 h1 {
     font-size: 2em;
     margin: .67em 0
@@ -445,8 +447,9 @@ a:visited,
 }
 
 .widget_bottom {
-    width: 640px
+    width: 640px;
 }
+
 
 .widget_bottom h1 {
     margin-top: 16px;
@@ -472,9 +475,88 @@ a:visited,
     border: 0 solid transparent;
     background: #212121
 }
-
+/* --------------------------- */
 @media (max-width:768px) {
     .widget_bottom {
         width: 90%
+    }
+    .logo-footer {
+        position: static; /* Que se ubique de forma natural al final */
+        margin-top: 20px; /* Un poco de espacio respecto al contenido */
+        transform: none; /* Quita el centrado forzado */
+    }
+}
+/* ------------------------------- */
+
+/* ----------- RESPONSIVE BASE ----------- */
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+    .widget_bottom {
+        width: 95% !important; /* Ocupar casi toda la pantalla */
+        margin: 0 auto; /* Centrar */
+        padding-bottom: 20px;
+    }
+
+    .widget_bottom h1 {
+        font-size: 16px;
+    }
+
+    .widget_bottom h2.caption {
+        font-size: 14px;
+    }
+
+    .bioLink-text {
+        font-size: 14px;
+        width: 70%;
+    }
+
+    .img_story {
+        width: 70px;
+        height: 70px;
+    }
+
+    ul.social li {
+        margin: 0 8px 8px;
+    }
+
+    .social li {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+/* Tablets y pantallas medianas */
+@media (min-width: 481px) and (max-width: 1024px) {
+    .widget_bottom {
+        width: 80%;
+    }
+
+    .widget_bottom h1 {
+        font-size: 17px;
+    }
+
+    .widget_bottom h2.caption {
+        font-size: 15px;
+    }
+
+    .bioLink-text {
+        font-size: 15px;
+    }
+
+    .img_story {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/* Pantallas grandes */
+@media (min-width: 1280px) {
+    .widget_bottom {
+        width: 640px;
+    }
+
+    .bioLink-text {
+        width: 55%;
     }
 }
